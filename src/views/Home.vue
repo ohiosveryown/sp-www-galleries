@@ -6,18 +6,18 @@
 
         <div class="intro">
           <!-- headline -->
-          <h1 class="mb-4 measure-6 f-xl f-sectra bold">See how ShootProof Galleries can make photograpy better and brighter.</h1>
+          <h1 class="fade-in mb-4 measure-6 f-xl f-sectra bold">See how ShootProof Galleries can make photograpy better and brighter.</h1>
           <!-- intro copy -->
-          <p class="mb-6 f-graphik">Galleries are a single space for creating and sharing together. Work seamlessly with all types of photos—from weddings and portrait, to seniors and newborns.</p>
+          <p class="fade-in mb-6 f-graphik">Galleries are a single space for creating and sharing together. Work seamlessly with all types of photos—from weddings and portrait, to seniors and newborns.</p>
           <!-- button -->
-          <div class="question-link">
+          <div class="fade-in question-link">
             <a class="transition">
               <h4 class="f-sm f-graphik bold">See Susan's Gallery</h4>
             </a>
           </div>
 
           <!-- thumbnails -->
-          <div class="thumbnails">
+          <div class="fade-in thumbnails">
             <ul>
               <li class="mr-3">
                 <figure class="first"></figure>
@@ -38,13 +38,13 @@
           <!-- hero img -->
           <div class="hero-img"></div>
           <!-- hero patterns -->
-          <img class="pattern-01" src="../assets/img/01-waves.svg" alt="">
-          <img class="pattern-02" src="../assets/img/02-waves.svg" alt="">
+          <img class="fade-in pattern-01" src="../assets/img/01-waves.svg" alt="">
+          <img class="fade-in pattern-02" src="../assets/img/02-waves.svg" alt="">
           <!-- hero title -->
           <div class="hero-title">
             <h1 class="f-xxl f-graphik bold">
-              <span>Susan</span>
-              <span>Stripling</span>
+              <span class="op-0">Susan</span>
+              <span class="op-0">Stripling</span>
             </h1>
           </div>
           <!-- year subtitle -->
@@ -154,6 +154,8 @@
 
       background: url('../assets/img/0202-lg.png') no-repeat center center;
       background-size: cover;
+
+      // animation: heroImg 800ms ease forwards;
     }
 
     .hero-subtitle {
@@ -171,25 +173,53 @@
       position: absolute;
       bottom: 160px; right: 344px;
       z-index: var(--zmin);
+
+      // animation: fadeIn 300ms ease 300ms forwards;
     }
 
     .pattern-02 {
       position: absolute;
       bottom: 320px; right: 16px;
       z-index: var(--zmin);
+
+      // animation: fadeIn 300ms ease 350ms forwards;
     }
 
     .hero-title {
       position: absolute;
       bottom: 9.6rem;
       z-index: var(--z0);
-      left: 24rem;
+      left: 20rem;
 
       color: #b4c4e8;
 
       span { display: block; }
-      span:nth-of-type(2) { transform: translateX(5.6rem); }
+      span:nth-of-type(1) { animation: spanOne 1400ms ease 700ms forwards; }
+      span:nth-of-type(2) { animation: spanTwo 1400ms ease 800ms forwards; transform: translateX(5.6rem); }
     }
+  }
+
+  .fade-in { opacity: 0; animation: fadeIn 1200ms ease 400ms forwards; }
+
+  // anim
+  @keyframes spanOne {
+    from { opacity: 0; transform: translateX(-4rem); }
+    to   { opacity: 1; transform: translateX(0); }
+  }
+
+  @keyframes spanTwo {
+    from { opacity: 0; transform: translateX(9.6rem); }
+    to   { opacity: 1; transform: translateX(5.6rem); }
+  }
+
+  @keyframes heroImg {
+    from { opacity: 0; transform: translateX(70px) translateY(1rem); }
+    to   { opacity: 1; transform: translateX(70px) translateY(0rem); }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
   }
 
 </style>
