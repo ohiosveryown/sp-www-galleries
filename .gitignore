@@ -21,4 +21,4 @@ yarn-error.log*
 
 # var
 assets/img
-assets/type
+assets/type/
