@@ -2,7 +2,7 @@
 <template>
   <div>
     <div class="hero">
-      <section class="mw__lg debug">
+      <section class="mw__lg">
 
         <div class="intro">
           <!-- headline -->
@@ -20,16 +20,19 @@
           <div class="thumbnails">
             <ul>
               <li class="mr-3">
-                <figure class="active first"></figure>
+                <figure class="first"></figure>
               </li>
               <li class="mr-3">
-                <figure class="second"></figure>
+                <figure class="active second"></figure>
               </li>
               <li>
                 <figure class="third"></figure>
               </li>
             </ul>
           </div>
+
+          <!-- hero img -->
+          <div class="hero-img"></div>
         </div>
 
       </section>
@@ -52,8 +55,9 @@
 
   .intro {
     position: relative;
-    padding: 20rem 0;
-    height: 96vh;
+    padding: 24rem 0;
+    height: 100vh;
+    // overflow: hidden;
 
     p { max-width: 36%; }
 
@@ -88,7 +92,7 @@
 
     .thumbnails {
       position: absolute;
-      bottom: 0;
+      bottom: 40px;
     }
 
     figure {
@@ -120,6 +124,19 @@
     }
 
     figure.active { box-shadow: 0 8px 20px 0 #A6B7DF; transform: translateY(-8px) scale(1.1); }
+
+    .hero-img {
+      position: absolute;
+      bottom: 0px; right: 24px;
+      z-index: var(--zmin);
+
+      width: 560px; height: 740px;
+      transform: translateX(70px) scale(0.95);
+      transform-origin: bottom;
+
+      background: url('../assets/img/02-lg.png') no-repeat center center;
+      background-size: cover;
+    }
   }
 
 </style>
