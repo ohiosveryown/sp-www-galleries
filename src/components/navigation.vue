@@ -32,7 +32,7 @@
   a {
   	position: relative;
   	display: inline-block;
-  	padding: 0.8em 2em;
+  	padding: 0.8em 2.4em;
   	text-decoration: none;
   	text-align: center;
   	cursor: pointer;

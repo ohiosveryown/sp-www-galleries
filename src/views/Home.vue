@@ -31,8 +31,26 @@
             </ul>
           </div>
 
+          <!-- hero subtitle -->
+          <div class="hero-subtitle">
+            <h6 class="f-xs f-sectra">Photographer</h6>
+          </div>
           <!-- hero img -->
           <div class="hero-img"></div>
+          <!-- hero patterns -->
+          <img class="pattern-01" src="../assets/img/01-waves.svg" alt="">
+          <img class="pattern-02" src="../assets/img/02-waves.svg" alt="">
+          <!-- hero title -->
+          <div class="hero-title">
+            <h1 class="f-xxl f-graphik bold">
+              <span>Susan</span>
+              <span>Stripling</span>
+            </h1>
+          </div>
+          <!-- year subtitle -->
+          <div class="year-subtitle">
+            <h6 class="f-sm f-sectra">—2018</h6>
+          </div>
         </div>
 
       </section>
@@ -55,7 +73,7 @@
 
   .intro {
     position: relative;
-    padding: 24rem 0;
+    padding: 21rem 0;
     height: 100vh;
     // overflow: hidden;
 
@@ -127,15 +145,50 @@
 
     .hero-img {
       position: absolute;
-      bottom: 0px; right: 24px;
-      z-index: var(--zmin);
+      bottom: 0px; right: 16px;
+      z-index: var(--z1);
 
-      width: 560px; height: 740px;
-      transform: translateX(70px) scale(0.95);
+      width: 600px; height: 740px;
+      transform: translateX(70px) scale(1);
       transform-origin: bottom;
 
-      background: url('../assets/img/02-lg.png') no-repeat center center;
+      background: url('../assets/img/0202-lg.png') no-repeat center center;
       background-size: cover;
+    }
+
+    .hero-subtitle {
+      position: absolute;
+      bottom: 384px; right: 440px;
+    }
+
+    .year-subtitle {
+      position: absolute;
+      bottom: 384px; right: -80px;
+      transform: rotate(90deg);
+    }
+
+    .pattern-01 {
+      position: absolute;
+      bottom: 160px; right: 344px;
+      z-index: var(--zmin);
+    }
+
+    .pattern-02 {
+      position: absolute;
+      bottom: 320px; right: 16px;
+      z-index: var(--zmin);
+    }
+
+    .hero-title {
+      position: absolute;
+      bottom: 9.6rem;
+      z-index: var(--z0);
+      left: 24rem;
+
+      color: #b4c4e8;
+
+      span { display: block; }
+      span:nth-of-type(2) { transform: translateX(5.6rem); }
     }
   }
 
