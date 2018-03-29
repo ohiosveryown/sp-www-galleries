@@ -5,6 +5,7 @@
     <heroTwo/>
     <gallerySample/>
     <galleryExamples/>
+    <galleryFeatures/>
 
   </div>
 </template>
@@ -21,9 +22,10 @@
   import heroTwo from '@/components/heroTwo.vue'
   import gallerySample from '@/components/gallerySample.vue'
   import galleryExamples from '@/components/galleryExamples.vue'
+  import galleryFeatures from '@/components/galleryFeatures.vue'
 
   export default {
     name: 'home',
-    components: { heroTwo, gallerySample, galleryExamples }
+    components: { heroTwo, gallerySample, galleryExamples, galleryFeatures }
   }
 </script>

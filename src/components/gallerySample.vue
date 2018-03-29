@@ -57,9 +57,7 @@
     position: relative;
   }
 
-  video {
-    box-shadow: 0px 41px 61px -28px rgba(0,0,0,0.3);
-  }
+  video { box-shadow: 0px 41px 61px -28px rgba(0,0,0,0.3); }
 
   article {
     position: relative;

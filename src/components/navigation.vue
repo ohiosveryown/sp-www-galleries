@@ -24,7 +24,7 @@
 <style scoped lang="scss">
   nav {
     position: fixed;
-    z-index: var(--zmax);
+    z-index: 999999;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
