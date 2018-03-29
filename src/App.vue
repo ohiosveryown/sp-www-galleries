@@ -6,7 +6,7 @@
       <router-link to="/about">About</router-link>
     </div> -->
 
-    <navigation class="mw__lg" />
+    <navigation/>
     <router-view/>
   </div>
 </template>
