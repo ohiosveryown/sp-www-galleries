@@ -1,6 +1,6 @@
 <!-- layout -->
 <template>
-  <div class="debug mw__lg">
+  <section class="mw__lg">
 
     <div class="row">
       <div class="box">
@@ -29,7 +29,7 @@
       </article>
     </div>
 
-  </div>
+  </section>
 </template>
 
 

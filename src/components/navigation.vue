@@ -11,7 +11,7 @@
           <li>Share</li>
           <li class="ml-9">Sell</li>
           <li class="ml-9">Grow</li>
-          <li class="ml-0 f-sm bold f-graphik uc"><a class="ml-9 f-graphik uc" href="#" data-title="Sign Up"></a></li>
+          <li class="ml-0 f-sm bold f-graphik uc"><a class="ml-9 f-graphik uc" href="https://studio.shootproof.com/v2/login" data-title="Sign Up"></a></li>
         </ul>
       </div>
     </div>
@@ -109,7 +109,7 @@
       const header_height = header.offsetHeight
       const add_class_on_scroll = () => header.classList.add("fade-in")
       const remove_class_on_scroll = () => header.classList.remove("fade-in")
-      
+
       window.addEventListener('scroll', function() {
         scrollpos = window.scrollY;
         if (scrollpos >= header_height) { add_class_on_scroll() }
