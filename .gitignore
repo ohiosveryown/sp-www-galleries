@@ -18,8 +18,6 @@ yarn-error.log*
 *.ntvs*
 *.njsproj
 *.sln
-*.mp4
-*.mov
 
 # var
 src/assets/img/
